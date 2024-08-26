@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Laporan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Laporan</h1>
+        <form id="laporanForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="laporan">Laporan:</label>
+            <textarea id="laporan" name="laporan" rows="4" required></textarea>
+
+            <button type="submit">Kirim Laporan</button>
+        </form>
+        <div id="successMessage" class="success-message">
+            Terima kasih, laporan Anda telah diterima.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
